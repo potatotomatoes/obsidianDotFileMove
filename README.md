@@ -33,4 +33,4 @@
 
 
 ## 指正和不足
-本人学术尚浅，只是利用一点powershell脚本罢了，欢迎提建议和commit 
+本人学术尚浅，只是利用一点powershell脚本罢了，欢迎提issue和pull 
