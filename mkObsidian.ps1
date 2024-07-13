@@ -1,5 +1,4 @@
 # for link the dotfile of the obsidianConfig.
-# pay atttion to that you need to run the script as a root.
 
 param($new, $old)
 
