@@ -1,9 +1,9 @@
 # obsidian仓库-文件夹配置统一化
 ## 前言
-在每次新建obsidian文件夹时，文件夹的主题和各种设置都需要重新设置，为了解决这个问题，我写了一个powershell脚本，朋友们只需要***键入一行命令***就可以通过创建链接的方式将文件夹统一配置
+在每次新建obsidian文件夹时，文件夹的主题都需要重新设置，为了解决这个问题，我写了一个powershell脚本，朋友们只需要***键入一行命令***就可以通过创建链接的方式将文件夹统一配置
 ## 步骤与前提
 1. 将设置好的.obsidian文件移动到自己想要放置的位置，保证文件路径**最好不包含中文名称**(中文名称可能会出现无法预估的错误)
- > "D:\dotFile\ObsidianConfig\.obsidianConfig"(这是我安放的位置，诸位根据自己需求自行修改)
+ > "D:\dotFile\ObsidianConfig\\.obsidianConfig"(这是我安放的位置，诸位根据自己需求自行修改)
 2. 打开powershell(注意，必须是powershell!不是cmd)
 3. 在包含文件mkObsidian.ps1的目录下执行命令，这会创建一个指向"oldfile"的链接
    ```powershell
@@ -33,4 +33,4 @@
 
 
 ## 指正和不足
-本人学术尚浅，只是利用一点powershell脚本罢了，欢迎提issue和pull 
+本人学术尚浅，代码中依然有很多不足，欢迎提issue和pull 
