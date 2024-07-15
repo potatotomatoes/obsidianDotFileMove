@@ -2,6 +2,7 @@
 - [obsidian仓库-文件夹配置统一化](#obsidian仓库-文件夹配置统一化)
   - [前言](#前言)
   - [步骤与前提](#步骤与前提)
+  - [注意事项](#注意事项)
   - [其他事项](#其他事项)
   - [什么是配置文件](#什么是配置文件)
   - [指正和不足](#指正和不足)
@@ -31,16 +32,17 @@
 4. 出现类似如下界面即完成配置
    ![alt text](assets/image.png)
 
+## 注意事项
+- **<font color="red">保证文件夹中只有一个配置文件的链接</font>**——即子文件夹中没有配置文件和配置文件的链接（<font color="red">否则可能会导致链接失效</font>）
 ## 其他事项
 - **该脚本会把新文件夹的原有配置文件删除(如果有的话)，并重新创建一个指向旧配置文件的链接**，如果想要保留新文件夹的配置，请不要使用该脚本，该脚本只是**保证新文件夹的配置同旧文件夹一致**
-- 传递的"oldfile"必须完整，即以.obsidian结尾(或者是你配置好的文件名称)
+- <font color="red">传递的"oldfile"必须完整</font>，即以.obsidian结尾(或者是你配置好的文件名称)
 - 传递的"newfile"可以只用传递文件夹名，不用带有类似".obsidian"结尾的字符，脚本会自动识别并创建.obsidian文件
 > 例如
    ```powershell
    .\mkObsidian.ps1 -new "D:\ObsidianVault\Test" -old "D:\dotFile\ObsidianConfig\.obsidianConfig"
    ```
-- 当你修改其中任意一个指向oldfile文件的链接时，所有的oldfile文件的链接和oldfile都会改变
-
+- 当你修改其中任意一个指向oldfile文件的链接时(即修改设置时)，所有的oldfile文件的链接和oldfile都会改变，**达到了统一配置的目的**。
 ***
 **如果出现权限不足问题，请用终端管理员身份打开powershell进行命令输入**
 
